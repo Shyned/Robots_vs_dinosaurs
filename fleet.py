@@ -9,8 +9,7 @@ class Fleet:
 
     def create_fleet(self,Robot):
         self.robo_fleet.append(Robot)
-        self.robo_fleet.append(Robot)
-        self.robo_fleet.append(Robot)
+      
 
 
 

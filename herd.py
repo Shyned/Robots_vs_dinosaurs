@@ -14,6 +14,5 @@ class Herd:
     #
     def create_herd(self):
         self.dino_herd.append(Dinosaur)
-        self.dino_herd.append(Dinosaur)
-        self.dino_herd.append(Dinosaur)
+        
         
