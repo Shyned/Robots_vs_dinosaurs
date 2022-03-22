@@ -9,12 +9,11 @@ class Herd:
     def __init__(self) :
         self.dino_herd = []
 
-    def create_herd(self,Dinosaur):
-        self.dino_herd.append(Dinosaur)
-        self.dino_herd.append(Dinosaur)
-        self.dino_herd.append(Dinosaur)
-        
-        
 
-        
 
+    #
+    def create_herd(self):
+        self.dino_herd.append(Dinosaur)
+        self.dino_herd.append(Dinosaur)
+        self.dino_herd.append(Dinosaur)
+        

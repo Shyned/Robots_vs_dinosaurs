@@ -13,11 +13,6 @@ class Fleet:
         self.robo_fleet.append(Robot)
 
 
-    
-
-
-
-# Peter_bot=Robot("Peter",100,100)
 
 
 # army=Fleet()
