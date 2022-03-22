@@ -20,12 +20,7 @@ class Dinosaur:
     def attack(self,robot:list):
         damages_list =[20,30,40,10,50,60]
         self.attack_power = random.choice(damages_list)
-        self
-        
-        if self.attack_power>= robot:
-            pass
-        else:
-            robot = robot - self.attack_power
+        robot.health = robot.health - self.attack_power
 
 
 

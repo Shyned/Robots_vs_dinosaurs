@@ -2,10 +2,6 @@ from unicodedata import name
 from robot import Robot
 
 
-
-
-
-
 class Fleet:
     def __init__(self) :
         self.robo_fleet = []

@@ -35,8 +35,16 @@ class Battlefeild:
 
 
     def battle(self):
-        pass
+        for robot in self.fleet:
+            if robot.health <=0:
+                self.fleet.remove(robot)
 
+
+        for dino in self.herd:
+            if dino.health<=0:
+                self.herd.remove(dino)
+                
+        
 
 
     def dino_turn(self,dinosaur):
@@ -45,6 +53,7 @@ class Battlefeild:
 
 
     def robo_turn (self,robot):
+
         Robot.attack(self.herd)
 
 

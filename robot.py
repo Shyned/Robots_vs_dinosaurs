@@ -16,15 +16,8 @@ class Robot:
     
     #dinosaur will be a index position and will be deleted once health <=0
     
-    
     def attack(self,dinosaur:list):
-        if self.attack_power.attack_power>=dinosaur:
-            dinosaur = 0
-            print(dinosaur)
-            
-
-        else:
-            dinosaur= self.attack_power.attack_power- dinosaur
+        dinosaur.health= self.attack_power.attack_power- dinosaur.health
 
 
 
