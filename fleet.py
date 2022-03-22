@@ -11,20 +11,22 @@ class Fleet:
         self.robo_fleet = []
 
 
-    def create_fleet(self):
-        self.robo_fleet.append(Robot(name,attack_power,health))
-        self.robo_fleet.append(Robot(name,attack_power,health))
-        self.robo_fleet.append(Robot(name,attack_power,health))
-        
+    def create_fleet(self,Robot):
+        self.robo_fleet.append(Robot)
+        self.robo_fleet.append(Robot)
+        self.robo_fleet.append(Robot)
 
 
     
 
 
 
+# Peter_bot=Robot("Peter",100,100)
 
-army=Fleet()
-army.create_fleet()
+
+# army=Fleet()
+# army.create_fleet(Peter_bot)
+# print(army.robo_fleet[0].name)
 
 
 

@@ -16,7 +16,14 @@ class Battlefeild:
 
 
     def display_welcome(self):
-        play_game = input("Do you want to play ")
+        answer = ["n","y"]
+        play_game = input("Would you like to play (y or n): ")
+        
+        while play_game not in answer:
+            play_game
+
+        else:
+
 
 
 

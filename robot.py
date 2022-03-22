@@ -10,7 +10,7 @@ import random
 class Robot:
     def __init__(self,name,attack_power,health) :
         self.name = name
-        self.attack_power =Weapon("sword",0)
+        self.attack_power =Weapon("",0)
         self.health = 100
     
     def attack(self,dinosaur):
@@ -25,9 +25,9 @@ class Robot:
 
 
 
-wood_axe = Weapon("axe",70)
-Peter_bot=Robot("Peter",wood_axe,100)
-Peter_bot.attack(100)
+# wood_axe = Weapon("axe",70)
+# Peter_bot=Robot("Peter",wood_axe,100)
+# Peter_bot.attack(100)
 
 
 
