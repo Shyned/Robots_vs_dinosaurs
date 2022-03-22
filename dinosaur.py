@@ -17,10 +17,11 @@ class Dinosaur:
 
 
 
-    def attack(self,robot):
+    def attack(self,robot:list):
         damages_list =[20,30,40,10,50,60]
         self.attack_power = random.choice(damages_list)
-        print(f"{self.name} attacked doing {self.attack_power} points of damage")
+        self
+        
         if self.attack_power>= robot:
             pass
         else:
