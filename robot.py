@@ -19,7 +19,7 @@ class Robot:
     def attack(self,dinosaur):
         damage_list =[1,.2,.3,2,1]
         
-        self.hit_points = random.choice(damage_list)*Weapon.attack_power
+        self.hit_points = random.choice(damage_list)*Weapon.attack_power()
         print(f"{self.name}used the {self.name}on{dinosaur[0].name()}.")
 
         dinosaur[0].health=self.hit_points - dinosaur.health()
