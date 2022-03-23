@@ -14,7 +14,19 @@ class Battlefeild:
 
 
     def run_game(self):
-        pass
+        self.display_welcome
+        while len(self.fleet)>0 or len(self.herd) >0:
+            self.show_robo_oppent_options
+            self.dino_turn
+            self.battle
+            self.show_dino_opponent_options
+            self.robo_turn
+            self.battle
+
+        else:
+            self.display_winners
+            
+
 
 
     def display_welcome(self):
@@ -29,7 +41,7 @@ class Battlefeild:
                 quit
 
             else:
-                self.run_game()
+                pass
 
 
 
@@ -38,11 +50,13 @@ class Battlefeild:
         for robot in self.fleet:
             if robot.health <=0:
                 self.fleet.remove(robot)
+                print(f"{robot.name} has died in battle!")
 
 
         for dino in self.herd:
             if dino.health<=0:
                 self.herd.remove(dino)
+                print(f"{dino.name} has died in battle!")
                 
         
 
